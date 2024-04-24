@@ -9,11 +9,11 @@ html,
 body {
     height: 100%;
     width: 100%;
-    padding-top: 54px;
+    padding-top: 6vh;
 }
 
 #backgound {
-    position: relative;
+    display: flex;
     width: 100%;
     height: 100%;
     
@@ -39,14 +39,15 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 15vh;
 }
 
 #name {
-    font-size: 80px;
+    font-size: 4.3vw;
     color: white;
     display: flex;
-    gap: 20px;
-    margin: 10px 20px;
+    gap: 0.2vw;
+    margin: 3vh 2vw;
 }
 
 #Anime {
@@ -55,7 +56,7 @@ body {
 
 #content {
     display: flex;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .text {
@@ -73,15 +74,16 @@ body {
 #Suggation {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 150px;
-    gap: 60px;
-
+    justify-content: space-evenly;
+    
+    height: 90vh;
+    flex-wrap: wrap;
 }
 
 .sugg {
-    height: 300px;
-    border-radius: 17px;
+    height: 40vh;
+    width: 14vw;
+    border-radius: 2vw;
     transition: 1s;
     opacity: 0.6;
 }
@@ -93,25 +95,30 @@ body {
 }
 
 #box {
-    border-radius: 20px;
-    width: 200px;
-    height: 31px;
-    padding: 10px;
+    border-radius: 1.3vw;
+    width: 14vw;
+    height: 4vh;
+    padding: 1vw;
     border: none;
     outline: none;
-    font-size: 20px;
-    margin: 36px 0px;
+    font-size: 1.3vw;
+    
 }
 
 #search {
-    font-size: 20px;
-    padding: 7px;
+    font-size: 1vw;
+    padding: 0.7vw;
     border-radius: 50%;
     background: #586298;
     color: white;
-    margin: 0px 10px;
+    margin-right: 1vw;
 }
-
+#form{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
 #Trending {
     color: white;
     top: 170px;
@@ -122,15 +129,16 @@ body {
 
 .sgn {
     text-decoration: none;
-    font-size: 15px;
-    width: 400px;
+    font-size: 1vw;
+    
     color: white;
     text-align: center;
+    
 }
 
 #comment {
-    height: 1500px;
-    width: auto;
+    height: 200vh;
+    width: 100vw;
     background-color: #262632fd;
     color: whitesmoke;
     padding: 30px;
@@ -140,12 +148,12 @@ body {
 #in {
     height: 100%;
     width: 250vh;
-
+    font-size: 1vw;
     margin: 30px 0px 0px 150px;
 }
 
 #in h1 {
-    font-size: 24px;
+    font-size: 2vw;
 }
 
 #list {
@@ -155,48 +163,25 @@ body {
 #com {
     margin: 0px 100px 0px 60px;
     text-align: center;
-    width: 70%;
+    width: 50vw;
     align-items: center;
 }
 
-#com1 {
+.com1 {
     margin: 20px 0px;
     border-radius: 10px;
-    width: 410px;
+    width: 30vw;
 }
 
-#com2 {
-    width: 410px;
-    border-radius: 10px;
-    margin: 20px 0px;
-}
 
-#com3 {
-    width: 410px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
-
-#com4 {
-    width: 410px;
-    margin: 20px 0px;
-    border-radius: 10px;
-
-}
-
-#com5 {
-    width: 410px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
 
 #read {
     background-color: rgb(62, 59, 80);
     color: white;
     position: absolute;
     width: 28%;
-    font-size: 14px;
-    padding: 10px;
+    font-size: 1.4vw;
+    padding: 1.7vw;
     border-radius: 20px;
     cursor: pointer;
 }
