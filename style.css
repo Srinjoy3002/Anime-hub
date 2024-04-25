@@ -16,9 +16,10 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    
+    margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
+
     
 }
 
@@ -30,16 +31,17 @@ body {
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    
 }
 
 #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     width: 100%;
-    height: 15vh;
+    height: 12.3vh;
 }
 
 #name {
@@ -57,6 +59,7 @@ body {
 #content {
     display: flex;
     font-size: 1.5vw;
+    justify-content: space-evenly;
 }
 
 .text {
@@ -75,14 +78,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 10vh;
     
-    height: 90vh;
-    flex-wrap: wrap;
+    height: 70vh;
+    
 }
 
 .sugg {
-    height: 40vh;
-    width: 14vw;
+    height: 20vw;
+    
     border-radius: 2vw;
     transition: 1s;
     opacity: 0.6;
@@ -104,20 +108,26 @@ body {
     font-size: 1.3vw;
     
 }
-
+#menu{
+    background: transparent;
+    color: #fff;
+    border: none;
+    display: none;
+    margin-top: 19px;
+}
 #search {
     font-size: 1vw;
     padding: 0.7vw;
     border-radius: 50%;
     background: #586298;
     color: white;
-    margin-right: 1vw;
+    
 }
+
 #form{
     display: flex;
-    
-    justify-content: space-around;
     align-items: center;
+    padding-top: 2vh;
 }
 #Trending {
     color: white;
@@ -130,7 +140,6 @@ body {
 .sgn {
     text-decoration: none;
     font-size: 1vw;
-    
     color: white;
     text-align: center;
     
@@ -138,18 +147,20 @@ body {
 
 #comment {
     height: 200vh;
-    width: 100vw;
+    justify-content: space-between;
     background-color: #262632fd;
     color: whitesmoke;
     padding: 30px;
     display: flex;
+    margin-top: 7.8vh;
+
 }
 
 #in {
     height: 100%;
     width: 250vh;
     font-size: 1vw;
-    margin: 30px 0px 0px 150px;
+    padding:0px 10vw;
 }
 
 #in h1 {
@@ -161,7 +172,7 @@ body {
 }
 
 #com {
-    margin: 0px 100px 0px 60px;
+    
     text-align: center;
     width: 50vw;
     align-items: center;
@@ -184,4 +195,64 @@ body {
     padding: 1.7vw;
     border-radius: 20px;
     cursor: pointer;
+}
+@media (max-width:600px) {
+    .text{
+        display: none;
+    }
+    #Suggation{
+        flex-wrap: wrap;
+    }
+    .sugg{
+        width: 120px;
+        height: auto;
+        
+    }
+    #name{
+        font-size: 40px;
+        margin-top: 40px;
+       
+    }
+    #form{
+        
+        width: 180px;
+        display: flex;
+        
+        
+    }
+    #box{
+        width: 150px;
+        font-size: 20px;
+    }
+    #search{
+        font-size: 20px;
+        background: transparent;
+        border: none;  
+    }
+    #menu{
+        display: block;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    #Trending{
+        top: 120px;
+        font-size: 20px;
+    }
+    .sgn{
+        font-size: 10px;
+    }
+    #in{
+        font-size: 10px;
+    }
+    #in h1{
+        font-size: 17px;
+    }
+    .com1{
+        height: 80px;
+        width: 120px;
+    }
+    #comment{
+        height: auto;
+        margin-top: -0.1vh;
+    }
 }
