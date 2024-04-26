@@ -23,20 +23,17 @@
                 <h6 id="Anime">Anime</h6>
                 <h6> hub</h6>
             </div>
-            <div class="content">
-                <a class="text" href="#">Home</a>
-                <a class="text" href="#">Movies</a>
-                <a class="text" href="#">TV Series</a>
-                <a class="text" href="#">Most Popular</a>
-                <a class="text" href="#">Top Airing</a>
-                
-                
-            </div>
+            <ul class="content">
+               <li><a class="text" href="#">Home</a></li>
+               <li><a class="text" href="#">Movies</a></li> 
+               <li><a class="text" href="#">Series</a></li> 
+               <li><a class="text" href="#">Popular</a></li> 
+               <li><a class="text" href="#">TopAiring</a></li> 
+            </ul>
             <div id="form">
                 <form action="https://hianime.to/search" target="_blank" method="get">
                     <input id="box" type="text" placeholder="search" name="keyword">
                     <button id="search" type="submit"><i class="ri-search-line"></i></button>
-            
                 </form>
             </div>
             <input type="checkbox" id="check">
@@ -129,7 +126,14 @@
             </div>
         </div>
     </div>
-    
+    <script>
+        // Toggle menu visibility when menu icon is clicked
+        document.getElementById('check').addEventListener('click', function () {
+            var menu = document.querySelector('.content');
+            menu.classList.toggle('show');
+        });
+
+    </script>
 </body>
 </html>
 
